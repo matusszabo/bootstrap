@@ -174,7 +174,7 @@ angular.module('ui.bootstrap.dropdown', ['ui.bootstrap.position'])
         break;
       }
     }
-    elems[self.selectedOption].focus();
+    if(elems[self.selectedOption]) elems[self.selectedOption].focus();
   };
 
   scope.getDropdownElement = function() {
